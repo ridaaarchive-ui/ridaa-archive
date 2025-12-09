@@ -1,0 +1,85 @@
+/* Reset & Common */
+body { margin:0; font-family:'Arial',sans-serif; background:#111; color:white; }
+.hidden { display:none; }
+
+/* Playfair Display for logos */
+.logo { font-family:'Playfair Display', serif; font-size:5em; letter-spacing:3px; text-align:center; color:white; z-index:10; }
+
+/* Cinematic Curtain */
+#intro-overlay { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column; background:#000; z-index:9999; }
+.curtain { position:absolute; top:0; bottom:0; width:50%; background:linear-gradient(180deg,#3c0b0b,#6b0f0f); transition: all 2s ease-in-out; }
+.curtain.left { left:0; transform-origin:left; }
+.curtain.right { right:0; transform-origin:right; }
+
+/* Home Page */
+#home-page { display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; gap:30px; text-align:center; }
+#home-buttons { display:flex; flex-direction:column; gap:50px; margin-top:50px; }
+.home-btn { padding:20px 60px; font-size:2em; color:white; text-decoration:none; border-radius:15px; transition:all 0.3s ease; }
+.home-btn:hover { transform:scale(1.1); box-shadow:0 0 20px pink; }
+.pink-btn { background:linear-gradient(135deg,#ff69b4,#ff85c1); }
+
+.home-tagline { font-size:2em; margin:0; }
+.home-subtagline { font-size:1.2em; opacity:0.7; }
+
+.top-right { position:fixed; top:20px; right:30px; font-size:1em; opacity:0.7; }
+
+/* Studio */
+.studio-container { display:flex; justify-content:center; align-items:center; height:100vh; }
+.camera-frame { position:relative; }
+#mirror { width:95%; max-width:1200px; height:85vh; border-radius:15px; transform:scaleX(-1); background:#222; }
+.camera-logo { position:absolute; top:10px; left:10px; font-family:'Playfair Display', serif; font-size:1.5em; color:white; opacity:0.8; }
+
+/* Manifesto / Book Page */
+.manifesto-container { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    gap: 50px; 
+    text-align: center; 
+    background: radial-gradient(circle at top, #111 0%, #222 100%); /* subtle background */
+}
+
+#affirmation-box { 
+    background: rgba(255, 105, 180, 0.2); 
+    padding: 40px; 
+    border-radius: 25px; 
+    max-width: 700px; 
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.5); /* subtle glow */
+    transition: all 0.3s ease;
+}
+
+#affirmation-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 40px rgba(255, 105, 180, 0.7);
+}
+
+#affirmation-text { 
+    font-size: 1.8em; 
+    color: #fff;
+    line-height: 1.4em;
+}
+
+#generate-btn { 
+    padding: 12px 30px; 
+    font-size: 1em; 
+    border: none; 
+    border-radius: 15px; 
+    background: linear-gradient(135deg, #ff69b4, #ff85c1); 
+    color: white; 
+    cursor: pointer; 
+    margin-top: 30px; 
+    transition: all 0.3s ease;
+}
+
+#generate-btn:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px pink; 
+}
+
+
+/* Vault */
+.vault-container { display:flex; justify-content:center; align-items:center; height:100vh; }
+.vault-box { background: rgba(255,105,180,0.1); padding:60px; border-radius:25px; max-width:800px; text-align:center; line-height:2em; font-size:1.5em; }
+.vault-box h1 { font-size:3em; letter-spacing:2px; color:#ff69b4; margin-bottom:20px; }
