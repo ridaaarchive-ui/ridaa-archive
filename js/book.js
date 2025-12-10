@@ -5,10 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const affirmations = [
         "If someone says you can't do it, do it twice, and take a picture",
         "Everything I lose creates space for everything I need",
-        "Hot girls study hard!",
+        "Hot girls study hard !",
         "'What, like it’s hard?' - Elle Woods",
         "I don’t chase, I attract - What’s meant for me will find me",
-        "Everything I want, wants me more"
+        "Everything I want, wants me more",
+        "Break the pattern today or the loop will repeat tomorrow"
     ];
 
     // Get DOM elements
